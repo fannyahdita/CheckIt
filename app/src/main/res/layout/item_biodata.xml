@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp">
+
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="textCapWords"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/textview_age"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fannyah Dita Cahya"
+            tools:ignore="TextViewEdits" />
+
+        <TextView
+            android:id="@+id/textview_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="14"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_name"
+            tools:text="081234567890" />
+
+        <TextView
+            android:id="@+id/textview_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/textview_years"
+            app:layout_constraintTop_toBottomOf="@id/textview_phone"
+            tools:text="Bogor" />
+
+        <TextView
+            android:id="@+id/textview_age"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@id/textview_years"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="21" />
+
+        <TextView
+            android:id="@+id/textview_years"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/years_old"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_age"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

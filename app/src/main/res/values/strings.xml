@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CheckIt</string>
+    <string name="title">Users</string>
+    <string name="add"><u>Add</u></string>
+    <string name="name">Name:</string>
+    <string name="name_hint">Name</string>
+    <string name="birthday">Birthday:</string>
+    <string name="age_hint">Age</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="city">City:</string>
+    <string name="city_hint">City</string>
+    <string name="submit">Submit</string>
+    <string name="first_deposit_hint">First Deposit</string>
+    <string name="first_deposit">First Deposit:</string>
+    <string name="balance">Balance:</string>
+
+    <string name="detail_age">%d years old</string>
+    <string name="detail_bonus">Congratulation! You got %d%% additional balance</string>
+    <string name="years_old">Years Old</string>
+</resources>
